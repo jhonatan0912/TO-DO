@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Todo app</title>
+  <style>
+    body {
+      background-color: hsl(0, 0%, 98%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="relative">
+    <div class="w-full absolute flex justify-between top-10 items-center px-5">
+      <h1 class="text-3xl font-semibold text-white">TO DO</h1>
+      <img src="./images/icon-moon.svg" alt="moon" class="cursor-pointer">
+    </div>
+    <img src="./images/bg-mobile-light.jpg" alt="header " class="w-full">
+    <form class="relative px-5" id="form">
+      <input id="input" type="text" placeholder="Create a new todo.."
+        class="absolute bottom-28 w-11/12 p-2 py-3 rounded outline-none" autocomplete="off">
+    </form>
+
+    <div class="bg-white w-11/12 bottom-20 left-5 px-2 rounded m-auto shadow" id="items-container">
+
+    </div>
+  </header>
+
+
+
+  <footer class="flex justify-center gap-4 bg-white py-3 w-11/12 m-auto rounded">
+    <div>All</div>
+    <div>Active</div>
+    <div>Completed</div>
+  </footer>
+  <!-- Todo -->
+
+  <!-- Add dynamic number items left -->
+
+  <!-- All
+  Active
+  Completed
+
+  Clear Completed
+
+  Drag and drop to reorder list -->
+  <script src="./app.js"></script>
+</body>
+
+</html>
